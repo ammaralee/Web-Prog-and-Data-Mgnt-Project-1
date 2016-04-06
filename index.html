@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="img/unnamed.png">
+    <title>Simply.me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/jquery.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/initslider-1.js"></script>
+    <!-- Include jQuery Popup Overlay -->
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.11/jquery.popupoverlay.js"></script>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/team.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <link href="css/terms.css" rel="stylesheet">
+    <link href="css/smartgreen.css" rel="stylesheet">
+    <link href="css/searchstyle.css" rel="stylesheet">
+
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Simply.me</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 navbar-right">
+                        <div class="input-group">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span id="search_concept">Filter by</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#contains">Contains</a></li>
+                                    <li><a href="#its_equal">It's equal</a></li>
+                                    <li><a href="#greather_than">Greather than ></a></li>
+                                    <li><a href="#less_than">Less than < </a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#all">Anything</a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="search_param" value="all" id="search_param">
+                            <input type="text" class="form-control" name="x"
+                                   placeholder="Search Businesses or People...">
+                <span class="input-group-btn">
+                            <button class="btn btn-primary" href="#search_result" data-toggle="modal"
+                                    type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+                        </div>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <p class="navbar-text">Already have an account?</p>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span
+                                    class="caret"></span></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            Login via
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i>
+                                                    Facebook</a>
+                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            or
+                                            <form class="form" role="form" method="post" action="index.html"
+                                                  accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2"
+                                                           placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only"
+                                                           for="exampleInputPassword2">Password</label>
+                                                    <input type="password" class="form-control"
+                                                           id="exampleInputPassword2" placeholder="Password"
+                                                           required>
+                                                    <div class="help-block text-right"><a href="">Forget the
+                                                        password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" id="login-in"
+                                                            class="btn btn-primary btn-block">Sign in
+                                                    </button>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input id="keep" type="checkbox"> keep me logged-in
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- POPUP SIGNUP  -->
+                                        <!-- <div class="bottom text-center">
+                                          New here? <a href="profile.html"><b>Join Us</b></a>
+                                        </div> -->
+                                        <button class="my_popup_open btn btn-success btn-block">New here? <b>Join Us</b>
+                                        </button>
+                                        <div id="my_popup">
+                                            <div class="container">
+                                                <form class="form-horizontal" method="post" action="userpage.html"
+                                                      enctype="multipart/form-data">
+                                                    <fieldset>
+                                                        ​
+                                                        <!-- Form Name -->
+                                                        <div class="dialog">
+
+                                                            <a class="my_popup_close close-thick"></a>
+
+                                                            <legend>Sign Up</legend>
+                                                        </div>
+                                                        ​ ​
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label"
+                                                                   for="textinput">Name</label>
+                                                            <div class="col-md-4">
+                                                                <input id="txtName" name="textinput" type="text"
+                                                                       placeholder="Name" class="form-control input-md">
+                                                                ​
+                                                            </div>
+                                                        </div>
+                                                        ​
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label"
+                                                                   for="textinput">D.O.B</label>
+                                                            <div class="col-md-4">
+                                                                <input id="txtBirthDate" name="textinput" type="date"
+                                                                       placeholder="Birthday"
+                                                                       class="form-control input-md"> ​
+                                                            </div>
+                                                        </div>
+                                                        ​ ​
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label"
+                                                                   for="textinput">Email</label>
+                                                            <div class="col-md-4">
+                                                                <input id="txtEmail" name="textinput" type="email"
+                                                                       placeholder="Email Address"
+                                                                       class="form-control input-md"> ​
+                                                            </div>
+                                                        </div>
+                                                        ​
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="textinput">Password</label>
+                                                            <div class="col-md-4">
+                                                                <input id="txtPassword" name="textinput" type="password"
+                                                                       placeholder="Password"
+                                                                       class="form-control input-md"> ​
+                                                            </div>
+                                                        </div>
+                                                        ​ ​
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label"
+                                                                   for="textinput">Phone</label>
+                                                            <div class="col-md-4">
+                                                                <input id="txtPhone" name="textinput" type="text"
+                                                                       placeholder="Phone"
+                                                                       class="form-control input-md"> ​
+                                                            </div>
+                                                        </div>
+                                                        ​ ​
+                                                        <!-- Select Basic -->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="selectbasic">Gender</label>
+                                                            <div class="col-md-4">
+                                                                <select id="txtGender" name="selectbasic"
+                                                                        class="form-control">
+                                                                    <option value="M">Male</option>
+                                                                    <option value="F">Female</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        ​
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="textinput">Website</label>
+                                                            <div class="col-md-4">
+                                                                <input id="txtWebsite" name="textinput" type="text"
+                                                                       placeholder="Website"
+                                                                       class="form-control input-md"> ​
+                                                            </div>
+                                                        </div>
+                                                        <!-- Text input-->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label" for="textinput">Description</label>
+                                                            <div class="col-md-4">
+                                                            <textarea id="txtDescription" name="textinput" type="text"
+                                                                      placeholder="Description"
+                                                                      class="form-control input-md">
+                                                            </textarea>
+                                                            </div>
+                                                        </div>
+                                                        ​
+                                                        <!-- File Button -->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label"
+                                                                   for="filebutton">Photo</label>
+                                                            <div class="col-md-4">
+                                                                <input id="filebutton" name="filebutton"
+                                                                       class="input-file" type="file"
+                                                                       multiple="multiple">
+                                                            </div>
+                                                        </div>
+                                                        ​
+                                                        <!-- Button -->
+                                                        <div class="form-group">
+                                                            <label class="col-md-4 control-label"
+                                                                   for="singlebutton"></label>
+                                                            <div class="col-md-4">
+                                                                <button id="singlebutton" name="singlebutton"
+                                                                        class="btn btn-primary">Submit
+                                                                </button>
+                                                                <button id="cancel"
+                                                                        class="my_popup_close btn btn-success">Close
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        ​
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.navbar-collapse -->
+    <!-- /.container -->
+</nav>
+
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="3000" id="bs-carousel">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Simply.me</h1>
+                        <h3>Express Yourself</h3>
+                    </hgroup>
+                    <!--  <button class="btn btn-hero btn-lg" role="button">See all features</button>!-->
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Simply.me</h1>
+                        <h3>Promote Yourself</h3>
+                    </hgroup>
+                    <!--  <button class="btn btn-hero btn-lg" role="button">See all features</button>!-->
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Simply.me</h1>
+                        <h3>Be Yourself</h3>
+                    </hgroup>
+                    <!--  <button class="btn btn-hero btn-lg" role="button">See all features</button>!-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section_header">
+            <h1>Inspired Networking</h1>
+            <br>
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <img src="img/flex1 copy.jpg">
+                            <div class="carousel-caption">
+                                <h4><a href="#">Express Yourself</a></h4>
+                                <p>Build a landing page that shows off you! Make this the one-stop page for friends,
+                                    family, and everyone else to get linked to all of your other sites. Quick and
+                                    easy!</p>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+
+                        <div class="item">
+                            <img src="img/flex2 copy.jpg">
+                            <div class="carousel-caption">
+                                <h4><a href="#">Promote Yourself</a></h4>
+                                <p>Like having a buisness card, but printing out all the links to your various social
+                                    media sites making your card too crowded? Now, all you need is to print one link!
+                                    Your Simply.me page will host all the links that were crowding your
+                                    business card to make it simple and easy to read!</p>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+
+                        <div class="item">
+                            <img src="img/flex3 copy.jpg">
+                            <div class="carousel-caption">
+                                <h4><a href="#">Be Yourself</a></h4>
+                                <p>Post your story or just an intro! Let the world know how you be you!</p>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+
+
+                    </div>
+                    <!-- End Carousel Inner -->
+
+
+                    <ul class="list-group col-sm-4">
+                        <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">
+                            <h4>Express Yourself</h4></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class="list-group-item">
+                            <h4>Promote Yourself</h4></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class="list-group-item">
+                            <h4>Be Yourself</h4></li>
+
+                    </ul>
+
+                    <!-- Controls -->
+                    <div class="carousel-controls">
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- End Carousel -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section id="contact" class="contact-section">
+
+    <div id="contactSection" class="container">
+        <div class="row">
+            <h3 class="description">Simplify your networking today!</h3>
+            <div class="col-sm-offset-4 col-sm-4 text-center">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-2 col-md-4 col-lg-6 text-center">
+                        <a class="btn btn-block btn-social btn-twitter">
+                            <span class="fa fa-twitter"></span>Twitter </a>
+
+                        <a class="btn btn-block btn-social btn-facebook">
+                            <span class="fa fa-facebook"></span>Facebook </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-2 col-md-4 col-lg-6 text-center">
+
+                            <a class="btn btn-block btn-social btn-google">
+                                <span class="fa fa-google"></span>Google </a>
+
+                            <a class="btn btn-block btn-social btn-github">
+                                <span class="fa fa-github"></span>GitHub </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+
+<section id="team" class="team">
+    <div class="container">
+
+        <h3 class="description">TEAM BIDIRECTIONAL BROADCASTERS</h3>
+        <div class="row pt-md">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 profile">
+                <div class="img-box">
+                    <img src="css/vn-prof.jpg" class="img-responsive img-circle">
+                    <ul class="text-center">
+                        <a href="#">
+                            <li><i class="fa fa-facebook"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-twitter"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-github"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1>Van Leslie Nguyen</h1>
+                <h2>Developer</h2>
+                <p>Van brings positive attitude and motivation to our team every meeting! She makes web development so
+                    much less frustrating!</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 profile">
+                <div class="img-box">
+                    <img src="css/nn-prof.jpg" class="img-responsive img-circle">
+                    <ul class="text-center">
+                        <a href="#">
+                            <li><i class="fa fa-facebook"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-twitter"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-github"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1>Noor Najjar</h1>
+                <h2>Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 profile">
+                <div class="img-box">
+                    <img src="css/mb-prof.jpg" class="img-responsive img-circle">
+                    <ul class="text-center">
+                        <a href="https://www.facebook.com/Nyxora">
+                            <li><i class="fa fa-facebook"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-twitter"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <a href="https://github.com/Nyxora">
+                            <li><i class="fa fa-github"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1>Megan Bond</h1>
+                <h2>Developer</h2>
+                <p>Megan is a critical part of the team. Making mockups and working on making the website pretty are
+                    just a couple of her contributions.</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 profile">
+                <div class="img-box">
+                    <img src="css/sa-prof.jpg" class="img-responsive img-circle">
+                    <ul class="text-center">
+                        <a href="https://github.com/sasa-us">
+                            <li><i class="fa fa-github"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1>Sha Lu</h1>
+                <h2>Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 profile">
+                <div class="img-box">
+                    <img src="css/us-prof.jpg" class="img-responsive img-circle">
+                    <ul class="text-center">
+                        <a href="https://www.facebook.com/udaycshah">
+                            <li><i class="fa fa-facebook"></i></li>
+                        </a>
+                        <a href="https://twitter.com/susshah">
+                            <li><i class="fa fa-twitter"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ushah2011">
+                            <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <a href="https://github.com/ushah2011">
+                            <li><i class="fa fa-github"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1>Uday Chandrakant Shah</h1>
+                <h2>Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-8 profile">
+                <div class="img-box">
+                    <img src="css/ay-prof.png" class="img-responsive img-circle">
+                    <ul class="text-center">
+                        <a href="https://www.facebook.com/ammar.y.alee" target="_blank">
+                            <li><i class="fa fa-facebook"></i></li>
+                        </a>
+                        <a href="https://twitter.com/Ammar_Yasir_Ali" target="_blank">
+                            <li><i class="fa fa-twitter"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ammaryalee" target="_blank">
+                            <li><i class="fa fa-linkedin"></i></li>
+                        </a>
+                        <a href="https://github.com/ammaralee/" target="_blank">
+                            <li><i class="fa fa-github"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <h1>Ammar Yasir Ali</h1>
+                <h2>Developer</h2>
+                <p>Ammar is our resident Bootstrapper. He makes the implementation of our website quick and easy!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer role="contentinfo" class="site-footer" id="colophon">
+    <div class="container">
+        <div class="row">
+            <div id="accordion" class="collapse-footer">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#collapseOne" data-parent="#accordion" data-toggle="collapse"
+                                                   class="collapsed"> <i class="fa fa-chevron-down"
+                                                                         style="color:white"></i></a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="collapseOne" style="height:0px;">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5 class="title"><span>Main Navigation</span></h5>
+                                    <div class="menu-main-menu-container">
+                                        <ul class="nav nav-footer" id="menu-main-menu-1">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14 current_page_item menu-item-16">
+                                                <a href="#">Home</a></li>
+                                            <!--<li><a href="#">Blog</a></li>
+                                            <li><a href="#">Students</a></li>-->
+                                            <li><a href="#team">About Us</a></li>
+                                            <li><a href="#primary" data-toggle="modal">Terms of Use</a></li>
+                                            <li><a href="#primary" data-toggle="modal">Privacy Policy</a></li>
+                                            <!--<li><a href="#">Join Us</a></li>
+                                            <li><a href="#">Help</a></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <h5 class="title"><span>Site map</span></h5>
+                                    <div class="menu-footer-sitemap-container">
+                                        <ul class="nav nav-footer" id="menu-footer-sitemap">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"
+                                                id="menu-item-87"><a href="#faq" data-toggle="modal">FAQ</a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"
+                                                id="menu-item-88"><a href="#support" data-toggle="modal">Support</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"
+                                                id="menu-item-89"><a href="#">Advertising</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3  col-sm-6">
+                                    <h5 class="title"><span>We're listening!</span></h5>
+                                    <p> Please let <strong>Team Bidirectional Broadcasters</strong> know about any
+                                        problems or suggestions you may have!</p>
+                                    <div class="clear"> </div>
+                                    <a class="btn btn-default btn-sm" href="#contact">Contact us!</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row copyright-img">
+                <div class="col-lg-4 col-sm-4"> Total Control. True Independence.</div>
+                <div class="col-lg-8 col-sm-8 text-right" id="footertext"> Copyright © 2016 Team Bidirectional
+                    Broadcasters
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Copyright -->
+
+
+</footer>
+<!-- /footer -->
+
+
+<a id="back-to-top" href="#" class="btn btn-primary btn-sm back-to-top" role="button"
+   title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span
+        class="glyphicon glyphicon-chevron-up"></span></a>
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Functionalities -->
+<script type="text/javascript" src="js/project1.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script src="js/search.js"></script>
+
+<script type="text/javascript" src="js/project1.js"></script>
+
+<!-- Include jQuery Popup Overlay -->
+<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.11/jquery.popupoverlay.js"></script>
+
+<!-- JS -->
+<script>
+    $(document).ready(function () {
+
+        // Initialize the plugin
+        $('#my_popup').popup();
+    });
+</script>
+
+<!-- POPUP Terms of Use and Privacy Policy  -->
+
+<!-- Modal -->
+<div class="modal fade" id="primary" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h1><i class="fa fa-bullseye"></i>Terms of Use & Privacy Policy</h1>
+            </div>
+            <div class="modal-body">
+                <h2>Welcome to Simply.me!</h2>
+                <p>These terms and conditions outline the rules and regulations for the use of Simply.me's Website. This
+                    website is
+                    created by Team Bidirectional Broadcasters.<br/>
+                    We are located at:<br/>
+                <address>
+                    800 N. State College Blvd. , <br/>
+                    Fullerton, California 92831<br/>
+                    United States<br/>
+                </address>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                </p>
+                <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer
+                    Notice and any or
+                    all Agreements: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <h2>Cookies</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <h2>License</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>You must not:</p>
+                <ul>
+                    <li>Lorem Ipsum dolor sit amet</li>
+                    <li>consectetur adipsicing elit</li>
+                    <li>sed do eiusmod tempor incididunt ut labore et dolor</li>
+                </ul>
+                <p>Redistribute content from Team Bidirectional Broadcasters (unless content is specifically made for
+                    redistribution).</p>
+
+                <h3>User Comments</h3>
+                <ol>
+                    <li>This Agreement shall begin on the date hereof.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    </li>
+                    <li>You warrant and represent that:
+                        <ol>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        </ol>
+                    </li>
+                    <li>You hereby grant Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    </li>
+                </ol>
+
+                <h2>Hyperlinking to our Content</h2>
+                <ol>
+                    <li>The following organizations may link to our Web site without prior written approval:
+                        <ul>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        </ul>
+                    </li>
+                </ol>
+                <ol start="2">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </li>
+                </ol>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <p>Approved organizations may hyperlink to our Web site as follows:</p>
+
+                <ul>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+
+                </ul>
+                <h2>Iframes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+
+                <h2>Content Liability</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <h2>Reservation of Rights</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <h2>Removal of links from our website</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h2>Disclaimer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- POPUP FAQ  -->
+
+<!-- Modal -->
+<div class="modal fade" id="faq" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h1><i class="fa fa-question-b"></i>Frequently Asked Questions</h1>
+            </div>
+            <div class="modal-body">
+                <h3>
+                    1. What is Lorem Ipsum?
+                </h3>
+
+                <br>
+                <p>
+                    <a id="Answer:1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                        of Letraset sheets containing Lorem Ipsum passages, and more
+                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                        Ipsum.
+                    </a>
+                </p>
+                <br>
+
+                <h3>
+                    2. Why do we use it?
+                </h3>
+                <br>
+                <p>
+                    <a id="Answer:2">It is a long established fact that a reader will be distracted by the readable
+                        content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                        more-or-less normal distribution of letters, as opposed to
+                        using 'Content here, content here', making it look like readable English. Many desktop
+                        publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                        search for 'lorem ipsum' will uncover many web sites still in their
+                        infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                        purpose (injected humour and the like).
+                    </a>
+                </p>
+                <br>
+
+                <h3>
+                    3. Where does it come from?
+                </h3>
+                <br>
+                <p>
+                    <a id="Answer:3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
+                        a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                        McClintock, a Latin professor at Hampden-Sydney College in
+                        Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                        passage, and going through the cites of the word in classical literature, discovered the
+                        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                        of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The first
+                        line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                        from a line in section 1.10.32.
+                        <br/>
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
+                        in their exact original form, accompanied by English
+                        versions from the 1914 translation by H. Rackham.
+                    </a>
+                </p>
+                <br>
+
+                <h3>
+                    4. Where can I get some?
+                </h3>
+                <br>
+                <p>
+                    <a id="Answer:4">There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered alteration in some form, by injected humour, or randomised words which don't look
+                        even slightly believable. If you are going to use a
+                        passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                        middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                        as necessary, making this the first true generator on the
+                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model
+                        sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum
+                        is therefore always free from repetition, injected humour, or
+                        non-characteristic words etc.
+                    </a>
+                </p>
+                <br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- POPUP Support  -->
+
+<!-- Modal -->
+<div class="modal fade" id="support" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="" method="post" class="smart-green">
+                <h1>Support Ticket
+                    <span>Please fill all the texts in the fields.</span>
+                </h1>
+                <label>
+                    <span>Your Name :</span>
+                    <input id="name" type="text" name="name" placeholder="Your Full Name"/>
+
+                </label>
+
+                <label>
+                    <span>Your Email :</span>
+                    <input id="email" type="email" name="email" placeholder="Valid Email Address"/>
+
+                </label>
+
+                <label>
+                    <span>Your Phone :</span>
+                    <input id="Phone" type="email" name="Phone" placeholder="Valid Phone Number"/>
+                </label>
+
+                <label>
+                    <span>Subject :</span><input id="Subject" type="text" name="Subject"
+                                                 placeholder="Your Full Subject"/>
+                </label>
+
+                <label>
+                    <span>Message :</span>
+                    <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+                </label>
+
+                <label>
+                    <span> </span>
+                    <input type="button" class="button" value="Send" data-dismiss="modal"/>
+                </label>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- POPUP Search  -->
+
+<!-- Modal -->
+<div class="modal fade" id="search_result" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h1><i class="fa fa-question-b"></i>Search Results</h1>
+            </div>
+            <div class="modal-body">
+                <hgroup class="mb20">
+                    <h2 class="lead"><strong class="text-danger">9</strong> results were found for the search for
+                        <strong class="text-danger">Lorem</strong></h2>
+                </hgroup>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Lorem ipsum" class="thumbnail"><img src="img/Barot_Bellingham_tn.jpg"
+                                                                               alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>02/15/2016</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>4:28 pm</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Artist</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
+                        <h3><a href="#" title="">Royal Academy of Painting and Sculpture</a></h3>
+                        <p>Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where
+                            he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse
+                            artists of his generation, Barot is equally as skilled with watercolors as he is with oils,
+                            and is just as well-balanced in different subject areas. Barot's collection entitled "The
+                            Un-Collection" will adorn the walls of Gilbert Hall, depicting his range of skills and
+                            sensibilities - all of them, uniquely Barot, yet undeniably different"</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Lorem ipsum" class="thumbnail"><img src="img/Constance_Smith_tn.jpg"
+                                                                               alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>02/13/2016</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>8:32 pm</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Designer</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">Fullerton-Brighton-Norwell Award</a></h3>
+                        <p>Constance received the Fullerton-Brighton-Norwell Award for Modern Art for her mixed-media
+                            image of a tree of life, with jewel-adorned branches depicting the arms of humanity, and
+                            precious gemstone-decorated leaves representing the spouting buds of togetherness. The
+                            daughter of a New York jeweler, Constance has been salvaging the discarded remnants of her
+                            father's jewelry-making since she was five years old, and won the New York State Fair grand
+                            prize at the age of 8 years old for a gem-adorned painting of the Manhattan Bridge.</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Lorem ipsum" class="thumbnail"><img src="img/Xhou_Ta_tn.jpg"
+                                                                               alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>01/11/2016</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Sculptor</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">China International Art University</a></h3>
+                        <p>A senior at the China International Art University, Xhou has become well-known for his
+                            miniature sculptures, often the size of a rice granule, that are displayed by rear
+                            projection of microscope images on canvas. Xhou will discuss the art and science behind his
+                            incredibly detailed works of art.</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Lorem ipsum" class="thumbnail"><img src="img/Hassum_Harrod_tn.jpg"
+                                                                               alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>01/01/2016</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Artist</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">Art College in New Dehli</a></h3>
+                        <p>The Art College in New Dehli has sponsored Hassum on scholarship for his entire undergraduate
+                            career at the university, seeing great promise in his contemporary paintings of landscapes -
+                            that use equal parts muted and vibrant tones, and are almost a contradiction in art. Hassum
+                            will be speaking on \"The use and absence of color in modern art\" during Thursday's
+                            agenda.</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Lorem ipsum" class="thumbnail"><img src="img/Hillary_Goldwynn_tn.jpg"
+                                                                               alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>25/12/2015</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Sculptor</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">New York University</a></h3>
+                        <p>Hillary is a sophomore art sculpture student at New York University, and has already won all
+                            the major international prizes for new sculptors, including the Divinity Circle, the
+                            International Sculptor's Medal, and the Academy of Paris Award. Hillary's CAC exhibit
+                            features 25 abstract watercolor paintings that contain only water images including waves,
+                            deep sea, and river.</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Jennifer Jerome" class="thumbnail"><img src="img/Jennifer_Jerome_tn.jpg"
+                                                                                   alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>01/11/2016</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Sculptor</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">New Orleans, Louisiana</a></h3>
+                        <p>A native of New Orleans, much of Jennifer's work has centered around abstract images that
+                            depict flooding and rebuilding, having grown up as a teenager in the post-flood years.
+                            Despite the sadness of devastation and lives lost, Jennifer's work also depicts the hope and
+                            togetherness of a community that has persevered. Jennifer's exhibit will be discussed during
+                            Tuesday's Water in Art theme</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Jonathan G. Ferrar II" class="thumbnail"><img
+                                src="img/Jonathan_Ferrar_tn.jpg" alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>20/12/2015</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Artist</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">Artist to Watch in 2012</a></h3>
+                        <p>The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the
+                            highest priced-commissions paid to an art student, ever on record. The piece, entitled
+                            Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated
+                            all the proceeds to Art for Peace, an organization that provides college art scholarships
+                            for creative children in developing nations</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="LaVonne L. LaRue" class="thumbnail"><img src="img/LaVonne_LaRue_tn.jpg"
+                                                                                    alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>01/11/2015</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Artist</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">Chicago, IL</a></h3>
+                        <p>LaVonne's giant-sized paintings all around Chicago tell the story of love, nature, and
+                            conservation - themes that are central to her heart. LaVonne will share her love and skill
+                            of graffiti art on Monday's schedule, as she starts the painting of a 20-foot high wall in
+                            the Rousseau Room of Hotel Contempo in front of a standing-room only audience in Art in
+                            Unexpected Places</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <a href="#" title="Riley Rudolph Rewington" class="thumbnail"><img
+                                src="img/Riley_Rewington_tn.jpg" alt="Lorem ipsum"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2">
+                        <ul class="meta-search">
+                            <li><i class="glyphicon glyphicon-calendar"></i> <span>28/11/2015</span></li>
+                            <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
+                            <li><i class="glyphicon glyphicon-tags"></i> <span>Artist</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <h3><a href="#" title="">Roux Academy of Art, Media, and Design</a></h3>
+                        <p>A first-year student at the Roux Academy of Art, Media, and Design, Riley is already changing
+                            the face of modern art at the university. Riley's exquisite abstract pieces have no
+                            intention of ever being understood, but instead beg the viewer to dream, create, pretend,
+                            and envision with their mind's eye. Riley will be speaking on the "Art of Abstract" during
+                            Thursday's schedule</p>
+                        <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                    </div>
+                    <span class="clearfix border"></span>
+                </article>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success pull-left" data-dismiss="modal">Close</button>
+        </div>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+</body>
+
+</html>
